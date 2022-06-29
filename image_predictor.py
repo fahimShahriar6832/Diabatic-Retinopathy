@@ -27,7 +27,7 @@ if uploaded_file is not None:
     st.image(img, caption='Query Image')
     
 # load model
-loaded_model = load_model('DR_VGG19_new.h5', custom_objects=None)
+loaded_model = load_model('St_DR_MobileNet.h5')
 
 result = loaded_model.predict(im)
 
