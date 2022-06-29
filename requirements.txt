@@ -1,0 +1,5 @@
+streamlit==0.80.0
+keras
+tensorflow
+Pillow==9.1.1
+joblib
