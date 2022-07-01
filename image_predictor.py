@@ -8,8 +8,8 @@ import joblib
 
 html_temp = """
 <div style="background-color:#00008B ;padding:10px">
-<h2 style="color:white;text-align:center;">Image Predictor</h2>
-<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h>
+<h2 style="color:white;text-align:center;"><b>Image Predictor</b></h2>
+<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
 
 </div>
 """
