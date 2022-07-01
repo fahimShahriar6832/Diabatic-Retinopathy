@@ -33,8 +33,8 @@ loaded_model = load_model('St_DR_MobileNet.h5')
 result = loaded_model.predict(im)
 
 
- color1 = st.color_picker('try', '#1aa3ff',key=1)
- st.write(f"again{color1}")
+color1 = st.color_picker('try', '#1aa3ff',key=1)
+st.write(f"again{color1}")
 
 st.subheader('Prediction Percentages:') 
 
