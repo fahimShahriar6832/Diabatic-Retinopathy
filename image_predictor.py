@@ -31,10 +31,6 @@ loaded_model = load_model('St_DR_MobileNet.h5')
 
 result = loaded_model.predict(im)
 
-st.write(result)
-
-if result[0][0] > result[0][1]:
-    print("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
-else:
-  print("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
-
+st.subheader('Prediction Percentages:') 
+st.write('**Diabetic Retinopathy  ( in % )**:',result[0][0]*100)
+st.write('**NO Diabetic Retinopathy  ( in % )**:',result[0][1]*100)
