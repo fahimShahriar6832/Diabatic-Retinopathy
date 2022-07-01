@@ -25,7 +25,7 @@ if uploaded_file is not None:
     im = np.array(im)
     im = im/255
     im = np.expand_dims(im,axis=0)
-    st.image(img, caption='Query Image')
+    st.image(im, caption='Query Image')
     
 # load model
 loaded_model = load_model('St_DR_MobileNet.h5')
