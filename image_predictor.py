@@ -4,12 +4,12 @@ from keras.models import load_model
 import numpy as np
 import joblib
 
-#st.header("Image Predictor")
+st.header("Image Predictor")
 
 html_temp = """
 <div style="background-color:#00008B ;padding:10px">
-<h2 style="color:white;text-align:center;"><b>Image Predictor</b></h2>
-<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
+<h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
+<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.Diabetic Retinopathy are diseases called after the parts of the body that are affected by an increase in blood glucose levels (retina of the eye is affected).</h3>
 
 </div>
 """
