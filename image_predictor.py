@@ -7,15 +7,14 @@ import joblib
 st.header("Image Predictor")
 
 html_temp = """
-<div style="background-color:#00008B ;padding:10px">
+<div style="background-color:#00008B ;font-size:24px;padding:24px">
 <h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
 <h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.Diabetic Retinopathy are diseases called after the parts of the body that are affected by an increase in blood glucose levels (retina of the eye is affected).</h3>
 
 </div>
 """
-st.markdown(html_temp,f'<h1 style="color:#33ff33;font-size:24px;">{"ColorMeBlue text”"}</h1>', unsafe_allow_html=True)
 
-#st.markdown(html_temp, unsafe_allow_html=True)
+st.markdown(html_temp, unsafe_allow_html=True)
 
 
 uploaded_file = st.file_uploader("Upload a fundas image")
