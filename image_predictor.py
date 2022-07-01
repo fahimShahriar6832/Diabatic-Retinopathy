@@ -13,7 +13,9 @@ html_temp = """
 
 </div>
 """
-st.markdown(html_temp, unsafe_allow_html=True)
+st.markdown(html_temp,f'<h1 style="color:#33ff33;font-size:24px;">{"ColorMeBlue text”"}</h1>', unsafe_allow_html=True)
+
+#st.markdown(html_temp, unsafe_allow_html=True)
 
 
 uploaded_file = st.file_uploader("Upload a fundas image")
