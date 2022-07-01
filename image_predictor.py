@@ -8,7 +8,7 @@ import joblib
 
 html_temp = """
 <div style="background-color:#00008B ;padding:10px">
-<h2 style="font-weight: bold;"color:white;text-align:center;">Image Predictor</h2>
+<h2 style="color:white;text-align:center;">Image Predictor</h2>
 
 </div>
 """
