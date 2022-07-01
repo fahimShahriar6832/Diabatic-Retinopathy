@@ -32,7 +32,13 @@ loaded_model = load_model('St_DR_MobileNet.h5')
 
 result = loaded_model.predict(im)
 
+
+ color1 = st.color_picker('try', '#1aa3ff',key=1)
+ st.write(f"again{color1}")
+
 st.subheader('Prediction Percentages:') 
+
+
 st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
 st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
 
