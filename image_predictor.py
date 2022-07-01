@@ -7,8 +7,8 @@ import joblib
 #st.header("Image Predictor")
 
 html_temp = """
-<div style="background-color:#025246 ;padding:10px">
-<h2 style="color:red;text-align:center;">Image Predictor</h2>
+<div style="background-color:#00008B ;padding:10px">
+<h2 style="color:white;text-align:center;">Image Predictor</h2>
 
 </div>
 """
