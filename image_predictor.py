@@ -39,21 +39,21 @@ if (selected == 'Diabatic-Retinopathy'):
     # Diabetes Prediction Page
 
 
-        if uploaded_file is not None:
-            img = Image.open(uploaded_file)
-            im = img.resize((224,224))
-            im = np.array(im)
-            im = im/255
-            im = np.expand_dims(im,axis=0)
-            st.image(im, caption='Query Image')
+    if uploaded_file is not None:
+        img = Image.open(uploaded_file)
+        im = img.resize((224,224))
+        im = np.array(im)
+        im = im/255
+        im = np.expand_dims(im,axis=0)
+        st.image(im, caption='Query Image')
 
-        # load model
-        loaded_model = load_model('St_DR_MobileNet.h5')
+    # load model
+    loaded_model = load_model('St_DR_MobileNet.h5')
 
-        result = loaded_model.predict(im)
+    result = loaded_model.predict(im)
 
-        if result[0][0] > result[0][1]:
-          st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
-        else:
-          st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
+    if result[0][0] > result[0][1]:
+      st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
+    else:
+      st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
 
