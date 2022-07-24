@@ -3,7 +3,6 @@ from PIL import Image
 from keras.models import load_model
 import numpy as np
 import joblib
-from streamlit_option_menu import option_menu
 
 st.header("Image Predictor")
 
@@ -17,17 +16,6 @@ html_temp = """
 
 st.markdown(html_temp, unsafe_allow_html=True)
 
-# sidebar for navigation
-with st.sidebar:
-    
-    selected = option_menu('Multiple Disease Prediction System',
-                          
-                          ['Diabetes Prediction',
-                           'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
-                          icons=['activity','heart','person'],
-                          default_index=0)
-    
     
 uploaded_file = st.file_uploader("Upload a fundas image")
 
