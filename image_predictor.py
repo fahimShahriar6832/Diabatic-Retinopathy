@@ -22,7 +22,7 @@ if (selected == 'Diabatic-Retinopathy'):
         # page title
     st.title('Diabetes Retinopathy using ML')
 
-    st.header("Image Predictor")
+    #st.header("Image Predictor")
 
     html_temp = """
     <div style="background-color:#00008B ;font-size:24px;padding:24px">
@@ -47,13 +47,13 @@ if (selected == 'Diabatic-Retinopathy'):
         im = np.expand_dims(im,axis=0)
         st.image(im, caption='Query Image')
 
-    # load model
-    loaded_model = load_model('St_DR_MobileNet.h5')
+        # load model
+        loaded_model = load_model('St_DR_MobileNet.h5')
 
-    result = loaded_model.predict(im)
+        result = loaded_model.predict(im)
 
-    if result[0][0] > result[0][1]:
-      st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
-    else:
-      st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
+        if result[0][0] > result[0][1]:
+          st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
+        else:
+          st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
 
