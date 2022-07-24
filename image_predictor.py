@@ -22,7 +22,7 @@ with st.sidebar:
     
     selected = option_menu('Multiple Disease Prediction System',
                           
-                          ['Diabetes Prediction',
+                          ['Diabatic-Retinopathy',
                            'Heart Disease Prediction',
                            'Parkinsons Prediction'],
                           icons=['activity','heart','person'],
@@ -32,22 +32,24 @@ with st.sidebar:
     
 uploaded_file = st.file_uploader("Upload a fundas image")
 
+# Diabetes Prediction Page
+if (selected == 'Diabatic-Retinopathy'):
 
-if uploaded_file is not None:
-    img = Image.open(uploaded_file)
-    im = img.resize((224,224))
-    im = np.array(im)
-    im = im/255
-    im = np.expand_dims(im,axis=0)
-    st.image(im, caption='Query Image')
-    
-# load model
-loaded_model = load_model('St_DR_MobileNet.h5')
+    if uploaded_file is not None:
+        img = Image.open(uploaded_file)
+        im = img.resize((224,224))
+        im = np.array(im)
+        im = im/255
+        im = np.expand_dims(im,axis=0)
+        st.image(im, caption='Query Image')
 
-result = loaded_model.predict(im)
+    # load model
+    loaded_model = load_model('St_DR_MobileNet.h5')
 
-if result[0][0] > result[0][1]:
-  st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
-else:
-  st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
+    result = loaded_model.predict(im)
+
+    if result[0][0] > result[0][1]:
+      st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
+    else:
+      st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
 
