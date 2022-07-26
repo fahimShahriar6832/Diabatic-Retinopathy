@@ -4,3 +4,4 @@ tensorflow
 Pillow==9.1.1
 joblib
 streamlit-option-menu==0.3.2
+pickle-mixin==1.0.2
