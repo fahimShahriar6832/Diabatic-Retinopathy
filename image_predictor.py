@@ -5,6 +5,8 @@ import numpy as np
 import joblib
 from streamlit_option_menu import option_menu
 
+st.title('Welcome')
+
 # sidebar for navigation
 with st.sidebar:
     
