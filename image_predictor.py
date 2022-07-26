@@ -41,7 +41,6 @@ if (selected == 'Fundas Image'):
 
     # Diabetes Prediction Page
 
-
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
         im = img.resize((224,224))
