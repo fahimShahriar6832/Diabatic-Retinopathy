@@ -4,6 +4,7 @@ from keras.models import load_model
 import numpy as np
 import joblib
 from streamlit_option_menu import option_menu
+import pickle
 
 
 
@@ -75,7 +76,9 @@ if (selected == 'OCT Image'):
         st.image(im, caption='Query Image')
 
         # load model
-        loaded_model = joblib.load('OCT.sav')
+        #loaded_model = joblib.load('OCT.sav')
+
+        loaded_model = pickle.load(open('OCT.sav', 'rb'))
 
         result = loaded_model.predict(im)
 
