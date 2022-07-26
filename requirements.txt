@@ -1,5 +1,6 @@
-streamlit==0.80.0
+streamlit==1.10.0
 keras
 tensorflow
 Pillow==9.1.1
 joblib
+streamlit-option-menu==0.3.2
