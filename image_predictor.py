@@ -10,9 +10,8 @@ with st.sidebar:
     selected = option_menu('Diabatic-Retinopathy',
                           
                           ['Fundas Image',
-                           'OCT Image',
-                           'Parkinsons Prediction'],
-                          icons=['activity','heart','person'],
+                           'OCT Image'],
+                          icons=['activity','heart'],
                           default_index=0)
     
 
