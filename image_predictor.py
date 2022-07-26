@@ -4,9 +4,6 @@ from keras.models import load_model
 import numpy as np
 import joblib
 from streamlit_option_menu import option_menu
-import pickle
-
-
 
 # sidebar for navigation
 with st.sidebar:
