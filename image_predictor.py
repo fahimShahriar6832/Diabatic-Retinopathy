@@ -56,6 +56,3 @@ if (selected == 'Fundas Image'):
         else:
           st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
 
-
-        
-        
