@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 from streamlit_option_menu import option_menu
 
-st.title('Welcome')
+
 
 # sidebar for navigation
 with st.sidebar:
@@ -18,6 +18,7 @@ with st.sidebar:
                           icons=['activity','heart','person'],
                           default_index=0)
     
+st.title('Welcome')
 
 if (selected == 'Diabatic-Retinopathy'):
     
