@@ -1,7 +1,8 @@
-streamlit==1.10.0
+pickle-mixin==1.0.2
+streamlit==1.2.0
 keras
 tensorflow
 Pillow==9.1.1
 joblib
 streamlit-option-menu==0.3.2
-pickle-mixin==1.0.2
+
