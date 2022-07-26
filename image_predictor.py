@@ -75,7 +75,7 @@ if (selected == 'OCT Image'):
         st.image(im, caption='Query Image')
 
         # load model
-        loaded_model = load_model('OCT.sav')
+        loaded_model = joblib.load('OCT.sav')
 
         result = loaded_model.predict(im)
 
