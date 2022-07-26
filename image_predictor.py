@@ -10,17 +10,16 @@ from streamlit_option_menu import option_menu
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('Diabatic-Retinopathy',
                           
-                          ['Diabatic-Retinopathy',
-                           'Heart Disease Prediction',
+                          ['Fundas Image',
+                           'OCT Image',
                            'Parkinsons Prediction'],
                           icons=['activity','heart','person'],
                           default_index=0)
     
-st.title('Welcome')
 
-if (selected == 'Diabatic-Retinopathy'):
+if (selected == 'Fundas Image'):
     
         # page title
     st.title('Diabetes Retinopathy using ML')
@@ -59,4 +58,34 @@ if (selected == 'Diabatic-Retinopathy'):
           st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
         else:
           st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
+
+
+        
+        
+if (selected == 'OCT Image'):
+
+    uploaded_file = st.file_uploader("Upload a OCT image")
+
+    if uploaded_file is not None:
+        img = Image.open(uploaded_file)
+        im = img.resize((224,224))
+        im = np.array(im)
+        im = im/255
+        im = np.expand_dims(im,axis=0)
+        st.image(im, caption='Query Image')
+
+        # load model
+        loaded_model = load_model('OCT.sav')
+
+        result = loaded_model.predict(im)
+
+
+        if (result[0][0] > result[0][1]) and (result[0][0] > result[0][2]) and (result[0][0] > result[0][3]) :
+            print("NORMAL [{:.2f}% accuracy]".format((result[0][0]*100)))
+        elif (result[0][1] > result[0][0]) and (result[0][1] > result[0][2]) and (result[0][1] > result[0][3]) :
+            print("CNV [{:.2f}% accuracy]".format((result[0][1]*100)))
+        elif (result[0][2] > result[0][1]) and (result[0][2] > result[0][0]) and (result[0][2] > result[0][3]) :
+            print("DME [{:.2f}% accuracy]".format((result[0][2]*100)))
+        elif (result[0][3] > result[0][1]) and (result[0][3] > result[0][2]) and (result[0][3] > result[0][0]) :
+            print("DRUSEN [{:.2f}% accuracy]".format((result[0][3]*100)))
 
