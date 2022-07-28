@@ -13,12 +13,12 @@ with st.sidebar:
                            'OCT Image'],
                           icons=['activity','heart'],
                           default_index=0)
-    
+st.title('Diabetes Retinopathy using ML')    
 
 if (selected == 'Fundas Image'):
     
         # page title
-    st.title('Diabetes Retinopathy using ML')
+    
 
     #st.header("Image Predictor")
 
