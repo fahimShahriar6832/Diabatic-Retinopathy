@@ -27,15 +27,7 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 
 if (selected == 'Fundas Image'):
-    
-
-    html_temp = """
-    <div style="background-color:#00008B ;font-size:24px;padding:24px">
-    <h3 style="color:white;text-align:center;">Fundus photographs are ocular documentation that record the appearance of a patient's retina. Optometrists, ophthalmologists, orthoptists and other trained medical professionals use fundus photography for monitoring the progression of certain eye condition/diseases.What does a fundus photograph show? It's able to provide a picture of the retina, the retinal vasculature (blood vessels), and the optic nerve head, where retinal blood vessels enter the eye. It can also show drusen, abnormal bleeding, scar tissue, and areas of atrophy.</h3>
-
-    </div>
-    """
-
+    st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
 
     uploaded_file = st.file_uploader("Upload a fundas image")
@@ -65,7 +57,7 @@ if (selected == 'Fundas Image'):
         
         
 if (selected == 'OCT Image'):
-    st.header("Upload a OCT image")
+    st.header("Upload a OCT Image")
 
     uploaded_file = st.file_uploader("")
 
