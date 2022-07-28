@@ -25,7 +25,7 @@ html_temp = """
 
 </div>
     """
-st.markdown('<p class="big-font">Hello World !!</p>',html_temp, unsafe_allow_html=True)
+st.markdown(html_temp, unsafe_allow_html=True)
 
 if (selected == 'Fundas Image'):
     image = Image.open('Fundus_Image.jpeg')
