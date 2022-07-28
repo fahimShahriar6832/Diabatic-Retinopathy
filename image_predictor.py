@@ -74,7 +74,7 @@ if (selected == 'OCT Image'):
         loaded_model = load_model('oct_MobileNet_1.h5')
 
         result = loaded_model.predict(im)
-
+        print(result)
 
         if (result[0][0] > result[0][1]) and (result[0][0] > result[0][2]) and (result[0][0] > result[0][3]) :
             print("NORMAL [{:.2f}% accuracy]".format((result[0][0]*100)))
