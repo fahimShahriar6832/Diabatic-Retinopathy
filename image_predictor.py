@@ -28,7 +28,7 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 if (selected == 'Fundas Image'):
     image = Image.open('Fundus_Image.jpeg')
-    st.image(image, caption='Fundus_Image)
+    st.image(image, caption='Fundus_Image')
     
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
@@ -61,7 +61,7 @@ if (selected == 'Fundas Image'):
         
 if (selected == 'OCT Image'):
     image = Image.open('OCT_Image.jpeg')
-    st.image(image, caption='OCT_Image)
+    st.image(image, caption='OCT_Image')
     st.header("Upload a OCT Image")
 
     uploaded_file = st.file_uploader("")
