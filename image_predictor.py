@@ -60,7 +60,7 @@ if (selected == 'Fundas Image'):
         
         
 if (selected == 'OCT Image'):
-    image = Image.open('OCT_Image.jpeg')
+    image = Image.open('oct.jpg')
     st.image(image, caption='OCT_Image')
     st.header("Upload a OCT Image")
 
