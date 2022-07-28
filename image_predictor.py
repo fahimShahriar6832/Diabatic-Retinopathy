@@ -17,16 +17,15 @@ st.title('Diabetes Retinopathy using ML')
 st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.")
 st.set_page_config(layout="wide")
 
-st.markdown("""
-<style>
-.big-font {
-    font-size:300px !important;
-}
-</style>
-""", unsafe_allow_html=True)
 
-st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
+html_temp = """
+<div style="background-color:#00008B ;font-size:24px;padding:24px">
+<h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
+<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
 
+</div>
+    """
+st.markdown('<p class="big-font">Hello World !!</p>',html_temp, unsafe_allow_html=True)
 
 if (selected == 'Fundas Image'):
     image = Image.open('Fundus_Image.jpeg')
