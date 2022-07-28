@@ -61,7 +61,7 @@ if (selected == 'Fundas Image'):
 if (selected == 'OCT Image'):
     st.header("Upload a OCT image")
 
-    uploaded_file = st.file_uploader()
+    uploaded_file = st.file_uploader("")
 
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
