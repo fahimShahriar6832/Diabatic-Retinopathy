@@ -4,23 +4,18 @@ from keras.models import load_model
 import numpy as np
 import joblib
 from streamlit_option_menu import option_menu
-
-
-
 # sidebar for navigation
 with st.sidebar:
     
-    selected = option_menu('Multiple Disease Prediction System',
+    selected = option_menu('Diabatic-Retinopathy',
                           
-                          ['Diabatic-Retinopathy',
-                           'Heart Disease Prediction',
-                           'Parkinsons Prediction'],
-                          icons=['activity','heart','person'],
+                          ['Fundas Image',
+                           'OCT Image'],
+                          icons=['activity','heart'],
                           default_index=0)
     
-st.title('Welcome')
 
-if (selected == 'Diabatic-Retinopathy'):
+if (selected == 'Fundas Image'):
     
         # page title
     st.title('Diabetes Retinopathy using ML')
@@ -40,7 +35,6 @@ if (selected == 'Diabatic-Retinopathy'):
     uploaded_file = st.file_uploader("Upload a fundas image")
 
     # Diabetes Prediction Page
-
 
     if uploaded_file is not None:
         img = Image.open(uploaded_file)
