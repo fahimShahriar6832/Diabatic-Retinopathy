@@ -16,6 +16,7 @@ with st.sidebar:
 st.title('Diabetes Retinopathy using ML')    
 html_temp = """
 <div style="background-color:#00008B ;font-size:24px;padding:24px">
+<input type="oct.jpg" accept="image/*" />
 <h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
 <h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
 
@@ -30,7 +31,7 @@ if (selected == 'Fundas Image'):
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
 
-    uploaded_file = st.file_uploader("Upload a fundas image")
+    uploaded_file = st.file_uploader("")
 
     # Diabetes Prediction Page
 
