@@ -71,7 +71,7 @@ if (selected == 'OCT Image'):
         st.image(im, caption='Query Image')
 
         # load model
-        loaded_model = load_model('oct_MobileNet.h5')
+        loaded_model = load_model('oct_MobileNet_1.h5')
 
         result = loaded_model.predict(im)
 
