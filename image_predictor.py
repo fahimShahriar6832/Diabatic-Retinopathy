@@ -27,6 +27,9 @@ st.markdown(html_temp, unsafe_allow_html=True)
 
 
 if (selected == 'Fundas Image'):
+    image = Image.open('oct.jpg')
+    st.image(image, caption='Escolha entre 3km e 50km')
+    
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
 
