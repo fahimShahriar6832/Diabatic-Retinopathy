@@ -18,9 +18,6 @@ st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to in
 
 
 
-st.markdown(html_temp, unsafe_allow_html=True)
-
-
 if (selected == 'Fundas Image'):
     image = Image.open('Fundus_Image.jpeg')
     st.image(image, caption='Fundus_Image')
