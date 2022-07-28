@@ -15,7 +15,7 @@ with st.sidebar:
                           default_index=0)
 st.title('Diabetes Retinopathy using ML')  
 st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.")
-st.set_page_config(layout="wide")
+
 
 
 html_temp = """
