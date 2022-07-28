@@ -14,27 +14,27 @@ with st.sidebar:
                           icons=['activity','heart'],
                           default_index=0)
 st.title('Diabetes Retinopathy using ML')    
-
 html_temp = """
 <div style="background-color:#00008B ;font-size:24px;padding:24px">
-<h3 style="color:white;text-align:center;">Fundus photographs are ocular documentation that record the appearance of a patient's retina. Optometrists, ophthalmologists, orthoptists and other trained medical professionals use fundus photography for monitoring the progression of certain eye condition/diseases.</h3>
+<h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
+<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
 
 </div>
-"""
+    """
+
 
 st.markdown(html_temp, unsafe_allow_html=True)
 
 
 if (selected == 'Fundas Image'):
     
+
     html_temp = """
     <div style="background-color:#00008B ;font-size:24px;padding:24px">
-    <h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
-    <h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.What does a fundus photograph show? It's able to provide a picture of the retina, the retinal vasculature (blood vessels), and the optic nerve head, where retinal blood vessels enter the eye. It can also show drusen, abnormal bleeding, scar tissue, and areas of atrophy.</h3>
+    <h3 style="color:white;text-align:center;">Fundus photographs are ocular documentation that record the appearance of a patient's retina. Optometrists, ophthalmologists, orthoptists and other trained medical professionals use fundus photography for monitoring the progression of certain eye condition/diseases.What does a fundus photograph show? It's able to provide a picture of the retina, the retinal vasculature (blood vessels), and the optic nerve head, where retinal blood vessels enter the eye. It can also show drusen, abnormal bleeding, scar tissue, and areas of atrophy.</h3>
 
     </div>
     """
-
 
     #st.header("Image Predictor")
 
