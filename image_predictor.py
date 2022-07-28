@@ -15,7 +15,17 @@ with st.sidebar:
                           default_index=0)
 st.title('Diabetes Retinopathy using ML')  
 st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.")
+st.set_page_config(layout="wide")
 
+st.markdown("""
+<style>
+.big-font {
+    font-size:300px !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown('<p class="big-font">Hello World !!</p>', unsafe_allow_html=True)
 
 
 if (selected == 'Fundas Image'):
