@@ -74,14 +74,14 @@ if (selected == 'OCT Image'):
         loaded_model = load_model('oct_MobileNet_1.h5')
 
         result = loaded_model.predict(im)
-        print(result)
+         st.write(result)
 
         if (result[0][0] > result[0][1]) and (result[0][0] > result[0][2]) and (result[0][0] > result[0][3]) :
-            print("NORMAL [{:.2f}% accuracy]".format((result[0][0]*100)))
+             st.write("NORMAL [{:.2f}% accuracy]".format((result[0][0]*100)))
         elif (result[0][1] > result[0][0]) and (result[0][1] > result[0][2]) and (result[0][1] > result[0][3]) :
-            print("CNV [{:.2f}% accuracy]".format((result[0][1]*100)))
+             st.write("CNV [{:.2f}% accuracy]".format((result[0][1]*100)))
         elif (result[0][2] > result[0][1]) and (result[0][2] > result[0][0]) and (result[0][2] > result[0][3]) :
-            print("DME [{:.2f}% accuracy]".format((result[0][2]*100)))
+             st.write("DME [{:.2f}% accuracy]".format((result[0][2]*100)))
         elif (result[0][3] > result[0][1]) and (result[0][3] > result[0][2]) and (result[0][3] > result[0][0]) :
-            print("DRUSEN [{:.2f}% accuracy]".format((result[0][3]*100)))
+             st.write("DRUSEN [{:.2f}% accuracy]".format((result[0][3]*100)))
 
