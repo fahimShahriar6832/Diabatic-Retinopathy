@@ -16,7 +16,14 @@ with st.sidebar:
 st.title('Diabetes Retinopathy using ML')    
 html_temp = """
 <div style="background-color:#00008B ;font-size:24px;padding:24px">
-<input type="oct.jpg" accept="image/*" />
+
+<form action="oct.jpg" method="post" enctype="multipart/form-data">
+  Select image to upload:
+  <input type="file" name="fileToUpload" id="fileToUpload">
+  <input type="submit" value="Upload Image" name="submit">
+</form>
+
+
 <h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
 <h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
 
