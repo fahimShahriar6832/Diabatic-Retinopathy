@@ -13,7 +13,8 @@ with st.sidebar:
                            'OCT Image'],
                           icons=['activity','heart'],
                           default_index=0)
-st.title('Diabetes Retinopathy using ML')    
+st.title('Diabetes Retinopathy using ML')  
+st.write("#Fahim")
 html_temp = """
 <div style="background-color:#00008B ;font-size:24px;padding:24px">
 <h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
