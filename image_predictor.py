@@ -76,6 +76,9 @@ if (selected == 'OCT Image'):
     
     image = Image.open('oct.jpg')
     st.image(image, caption='OCT_Image')
+    image_2 = Image.open('image.jpg')
+    st.image(image_2, caption='OCT_Image')
+    
     st.header("Upload a OCT Image")
 
     uploaded_file = st.file_uploader("")
