@@ -56,9 +56,9 @@ if (selected == 'Fundas Image'):
         result = loaded_model.predict(im)
 
         if result[0][0] > result[0][1]:
-          st.write("Diabetic Retinopathy :sad: [{:.2f}% accuracy]".format((result[0][0]*100)))
+          st.write("Diabetic Retinopathy :heart: [{:.2f}% accuracy]".format((result[0][0]*100)))
         else:
-          st.write("NO Diabetic Retinopathy :heart:[{:.2f}% accuracy]".format((result[0][1])*100))
+          st.write("NO Diabetic Retinopathy :thumbs_up:[{:.2f}% accuracy]".format((result[0][1])*100))
 
         
         
