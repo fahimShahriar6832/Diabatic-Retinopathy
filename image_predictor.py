@@ -14,7 +14,7 @@ with st.sidebar:
                           icons=['activity','heart'],
                           default_index=0)
 st.title('Diabetes Retinopathy using ML')  
-st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.:sunglasses:")
+st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.")
 
 
 
@@ -55,10 +55,10 @@ if (selected == 'Fundas Image'):
 
         result = loaded_model.predict(im)
 
-        if result[0][0] > result[0][1]:
-          st.write("Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][0]*100)))
+        if result[0][0] > result[0][1]
+          st.write("Diabetic Retinopathy:activity: [{:.2f}% accuracy]".format((result[0][0]*100)))
         else:
-          st.write("NO Diabetic Retinopathy [{:.2f}% accuracy]".format((result[0][1])*100))
+          st.write("NO Diabetic Retinopathy:heart:[{:.2f}% accuracy]".format((result[0][1])*100))
 
         
         
