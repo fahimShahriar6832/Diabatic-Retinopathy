@@ -72,10 +72,8 @@ if (selected == 'OCT Image'):
 
     </div>
         """
-   # st.markdown(html_temp, unsafe_allow_html=True)
-    
-    image = Image.open('oct.jpg')
-    st.image(image, caption='OCT_Image')
+    st.markdown(html_temp, unsafe_allow_html=True)
+   
     image_2 = Image.open('image.jpg')
     st.image(image_2, caption='OCT_Image')
     
