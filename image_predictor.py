@@ -31,8 +31,8 @@ if (selected == 'Fundas Image'):
 
     image = Image.open('Fundus_Image.jpeg')
     st.image(image, caption='Fundus_Image')
-    image = Image.open('Diabatic.jpg')
-
+    image_2 = Image.open('Diabatic.jpg')
+    st.image(image_2, caption='Fundus_Image')
     
     
     st.header("Upload a Fundus Image")
