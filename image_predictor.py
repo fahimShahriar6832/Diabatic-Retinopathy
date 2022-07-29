@@ -18,16 +18,17 @@ st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to in
 
 
 
-html_temp = """
-<div style="background-color:#00008B ;font-size:24px;padding:24px">
-<h2 style="color:white;text-align:center;"><b>What is Diabetic Retinopathy?</b></h2>
-<h3 style="color:white;text-align:center;">Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.</h3>
-
-</div>
-    """
-st.markdown(html_temp, unsafe_allow_html=True)
-
 if (selected == 'Fundas Image'):
+
+    html_temp = """
+    <div style="background-color:#00008B ;font-size:24px;padding:24px">
+    <h2 style="color:white;text-align:center;"><b>What is meant by fundus images?</b></h2>
+    <h3 style="color:white;text-align:center;">Fundus imaging is defined as the process whereby reflected light is used to form a two dimensional representation of the three dimensional retina, the semi-transparent, layered tissue lining the interior of the eye projected onto an imaging plane </h3>
+
+    </div>
+        """
+    st.markdown(html_temp, unsafe_allow_html=True)
+
     image = Image.open('Fundus_Image.jpeg')
     st.image(image, caption='Fundus_Image')
     
@@ -61,6 +62,15 @@ if (selected == 'Fundas Image'):
         
         
 if (selected == 'OCT Image'):
+     html_temp = """
+    <div style="background-color:#00008B ;font-size:24px;padding:24px">
+    <h2 style="color:white;text-align:center;"><b>What is an OCT image?</b></h2>
+    <h3 style="color:white;text-align:center;">Optical coherence tomography (OCT) is an emerging technology for performing high-resolution cross-sectional imaging. OCT is analogous to ultrasound imaging, except that it uses light instead of sound. OCT can provide cross-sectional images of tissue structure on the micron scale in situ and in real time.</h3>
+
+    </div>
+        """
+    st.markdown(html_temp, unsafe_allow_html=True)
+    
     image = Image.open('oct.jpg')
     st.image(image, caption='OCT_Image')
     st.header("Upload a OCT Image")
