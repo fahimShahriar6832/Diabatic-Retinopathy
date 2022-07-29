@@ -95,7 +95,7 @@ if (selected == 'OCT Image'):
         result = loaded_model.predict(im)
 
         if (result[0][0] > result[0][1]) and (result[0][0] > result[0][2]) and (result[0][0] > result[0][3]) :
-             st.write("NORMAL [{:.2f}% accuracy]".format((result[0][0]*100)))
+             st.write("NORMAL :grinning: [{:.2f}% accuracy]".format((result[0][0]*100)))
         elif (result[0][1] > result[0][0]) and (result[0][1] > result[0][2]) and (result[0][1] > result[0][3]) :
              st.write("CNV [{:.2f}% accuracy]".format((result[0][1]*100)))
         elif (result[0][2] > result[0][1]) and (result[0][2] > result[0][0]) and (result[0][2] > result[0][3]) :
