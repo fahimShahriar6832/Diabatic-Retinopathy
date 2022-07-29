@@ -27,13 +27,13 @@ if (selected == 'Fundas Image'):
 
     </div>
         """
-    #st.markdown(html_temp, unsafe_allow_html=True)
+    st.markdown(html_temp, unsafe_allow_html=True)
 
-    image = Image.open('Fundus_Image.jpeg')
-    st.image(image, caption='Fundus_Image')
+
     image_2 = Image.open('Diabatic.jpg')
     st.image(image_2, caption='Fundus_Image')
-    
+    image = Image.open('Fundus_Image.jpeg')
+    st.image(image, caption='Fundus_Image')
     
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
