@@ -27,7 +27,7 @@ if (selected == 'Fundas Image'):
 
     </div>
         """
-    st.markdown(html_temp, unsafe_allow_html=True)
+    #st.markdown(html_temp, unsafe_allow_html=True)
 
     image = Image.open('Fundus_Image.jpeg')
     st.image(image, caption='Fundus_Image')
@@ -69,7 +69,7 @@ if (selected == 'OCT Image'):
 
     </div>
         """
-    st.markdown(html_temp, unsafe_allow_html=True)
+   # st.markdown(html_temp, unsafe_allow_html=True)
     
     image = Image.open('oct.jpg')
     st.image(image, caption='OCT_Image')
