@@ -62,7 +62,7 @@ if (selected == 'Fundas Image'):
         
         
 if (selected == 'OCT Image'):
-     html_temp = """
+    html_temp = """
     <div style="background-color:#00008B ;font-size:24px;padding:24px">
     <h2 style="color:white;text-align:center;"><b>What is an OCT image?</b></h2>
     <h3 style="color:white;text-align:center;">Optical coherence tomography (OCT) is an emerging technology for performing high-resolution cross-sectional imaging. OCT is analogous to ultrasound imaging, except that it uses light instead of sound. OCT can provide cross-sectional images of tissue structure on the micron scale in situ and in real time.</h3>
