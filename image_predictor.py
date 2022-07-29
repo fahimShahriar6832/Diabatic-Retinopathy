@@ -31,6 +31,9 @@ if (selected == 'Fundas Image'):
 
     image = Image.open('Fundus_Image.jpeg')
     st.image(image, caption='Fundus_Image')
+    image = Image.open('Diabatic.jpg')
+
+    
     
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
