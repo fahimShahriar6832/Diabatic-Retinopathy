@@ -31,9 +31,9 @@ if (selected == 'Fundas Image'):
 
 
     image_2 = Image.open('Diabatic.jpg')
-    st.image(image_2, caption='Fundus_Image')
+    st.image(image_2, caption='Blood')
     image = Image.open('Fundus_Image.jpeg')
-    #st.image(image, caption='Fundus_Image')
+    st.image(image, caption='Fundus_Image')
     
     st.header("Upload a Fundus Image")
     #st.header("Image Predictor")
