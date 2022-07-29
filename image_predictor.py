@@ -13,7 +13,7 @@ with st.sidebar:
                            'OCT Image'],
                           icons=['activity','heart'],
                           default_index=0)
-st.title('Diabetes Retinopathy using ML :heart:')  
+st.title('Diabetes Retinopathy using ML :drop_of_blood:')  
 st.write("Diabetic retinopathy (DR) is an illness occurring in the eye due to increase in blood glucose level.")
 
 
